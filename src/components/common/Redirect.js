@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { authenticate } from "../../actions/loginInAction";
-import store from 'store'
+// import store from 'store'
 
 class RedirectAfterFBSignIn extends Component {
   constructor(props) {
