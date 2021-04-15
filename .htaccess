@@ -2,10 +2,10 @@
 
   RewriteEngine On
   RewriteBase /
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-l
-  RewriteRule . /index.html [L]
+  RewriteRule ^(.*)$ https://inspiring-facebook-login.netlify.app/$1 [L,R=301]
+  RewriteCond %{https://inspiring-facebook-login.netlify.app} !-f
+  RewriteCond %{https://inspiring-facebook-login.netlify.app} !-d
+  RewriteCond %{https://inspiring-facebook-login.netlify.app} !-l
+  RewriteCond %{HTTP_HOST} ^https://inspiring-facebook-login.netlify.app [NC]
 
 </IfModule>
