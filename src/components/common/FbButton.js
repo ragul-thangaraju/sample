@@ -5,7 +5,7 @@ const FB_ID = "297983414833872";
 const FB_VERSION = "v10.0";
 const FB_SCOPE =
   "pages_show_list,pages_read_engagement,instagram_basic,instagram_manage_insights";
-const FB_REDIRECT_URL = encodeURIComponent("https://inspiring-facebook-login.netlify.app/redirect");
+const FB_REDIRECT_URL = encodeURIComponent("https://web.embassysocial.io/redirect");
 const FB_STATE = "fbloged=1";
 
 class FacebookLoginButton extends Component {
