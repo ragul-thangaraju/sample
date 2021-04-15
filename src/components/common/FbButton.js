@@ -31,18 +31,18 @@ class FacebookLoginButton extends Component {
       var timer = setInterval(async function () {
         if (fbWindow.closed) {
           clearInterval(timer);
-          try {
+        //   try {
             var url = new URL(fbWindow.document.URL);
             console.log(url)
             let token = url.searchParams.get("code");
             console.log(token)
-            if(!token) {
-              reject(null)
-            }
-            resolve(token);
-          } catch (ex) {
-            reject(null);
-          }
+          //   if(!token) {
+          //     reject(null)
+          //   }
+          //   resolve(token);
+          // } catch (ex) {
+          //   reject(null);
+          // }
         }
       }, 1000);
     });
