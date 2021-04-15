@@ -34,7 +34,7 @@ class FacebookLoginButton extends Component {
         //   try {
           console.log(fbWindow.location.href, 'fbWindow.location.href')
           console.log(fbWindow.document, 'fbWindow.document')
-          console.log(fbWindow.document.URL, 'fbWindow.document.URL')
+          // console.log(fbWindow.document.URL, 'fbWindow.document.URL')
           console.log(fbWindow.document.documentURI, 'fbWindow.document.documentURI')
             // var url = new URL(fbWindow.document.documentURI);
             // console.log(url)
