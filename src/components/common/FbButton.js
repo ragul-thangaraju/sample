@@ -36,10 +36,10 @@ class FacebookLoginButton extends Component {
           console.log(fbWindow.document, 'fbWindow.document')
           console.log(fbWindow.document.URL, 'fbWindow.document.URL')
           console.log(fbWindow.document.documentURI, 'fbWindow.document.documentURI')
-            var url = new URL(fbWindow.document.documentURI);
-            console.log(url)
-            let token = url.searchParams.get("code");
-            console.log(token)
+            // var url = new URL(fbWindow.document.documentURI);
+            // console.log(url)
+            // let token = url.searchParams.get("code");
+            // console.log(token)
           //   if(!token) {
           //     reject(null)
           //   }
