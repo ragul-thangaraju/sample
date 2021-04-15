@@ -33,7 +33,9 @@ class FacebookLoginButton extends Component {
           clearInterval(timer);
           try {
             var url = new URL(fbWindow.document.URL);
+            console.log(url)
             let token = url.searchParams.get("code");
+            console.log(token)
             if(!token) {
               reject(null)
             }

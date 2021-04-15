@@ -12,7 +12,7 @@ class RedirectAfterFBSignIn extends Component {
 
   componentDidMount() {
     window.addEventListener("load", function (event) {
-      window.close();
+      // window.close();
     });
   }
 
