@@ -33,8 +33,8 @@ class FacebookLoginButton extends Component {
           clearInterval(timer);
         //   try {
           console.log(fbWindow.location.href, 'fbWindow.location.href')
-          console.log(fbWindow.document.URL, 'fbWindow.document.URL')
-            var url = new URL(fbWindow.document.URL);
+          console.log(fbWindow.document.documentURI, 'fbWindow.document.documentURI')
+            var url = new URL(fbWindow.document.documentURI);
             console.log(url)
             let token = url.searchParams.get("code");
             console.log(token)
