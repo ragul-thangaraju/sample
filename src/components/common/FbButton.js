@@ -24,7 +24,7 @@ class FacebookLoginButton extends Component {
   };
 
   openFbDialog = async () => {
-    return new Promise(async (resolve, reject) => {
+    // return new Promise(async (resolve, reject) => {
       let uri = this.buildUrlFb();
       let fbWindow = await this.popupWindow(uri, "", window, 1000, 600);
 
@@ -33,6 +33,8 @@ class FacebookLoginButton extends Component {
           clearInterval(timer);
         //   try {
           console.log(fbWindow.location.href, 'fbWindow.location.href')
+          console.log(fbWindow.document, 'fbWindow.document')
+          console.log(fbWindow.document.URL, 'fbWindow.document.URL')
           console.log(fbWindow.document.documentURI, 'fbWindow.document.documentURI')
             var url = new URL(fbWindow.document.documentURI);
             console.log(url)
@@ -47,7 +49,7 @@ class FacebookLoginButton extends Component {
           // }
         }
       }, 1000);
-    });
+    // });
   };
 
   myFbLogin = async () => {
