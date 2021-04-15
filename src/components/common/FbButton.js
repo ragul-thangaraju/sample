@@ -5,7 +5,7 @@ const FB_ID = "297983414833872";
 const FB_VERSION = "v10.0";
 const FB_SCOPE =
   "pages_show_list,pages_read_engagement,instagram_basic,instagram_manage_insights";
-const FB_REDIRECT_URL = encodeURIComponent("https://localhost:3000/redirect");
+const FB_REDIRECT_URL = encodeURIComponent("https://inspiring-facebook-login.netlify.app/redirect");
 const FB_STATE = "fbloged=1";
 
 class FacebookLoginButton extends Component {
@@ -28,14 +28,14 @@ class FacebookLoginButton extends Component {
       let uri = this.buildUrlFb();
       let fbWindow = await this.popupWindow(uri, "", window, 1000, 600);
 
+      console.log(fbWindow, 'fbWindow')
       var timer = setInterval(async function () {
         if (fbWindow.closed) {
           clearInterval(timer);
         //   try {
-          console.log(fbWindow.location.href, 'fbWindow.location.href')
-          console.log(fbWindow.document, 'fbWindow.document')
-          // console.log(fbWindow.document.URL, 'fbWindow.document.URL')
-          console.log(fbWindow.document.documentURI, 'fbWindow.document.documentURI')
+            console.log(fbWindow.document, 'fbWindow.document')
+            console.log(fbWindow.document.URL, 'fbWindow.document.URL')
+            console.log(fbWindow.document.documentURI, 'fbWindow.document.documentURI')
             // var url = new URL(fbWindow.document.documentURI);
             // console.log(url)
             // let token = url.searchParams.get("code");
